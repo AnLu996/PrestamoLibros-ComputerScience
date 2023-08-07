@@ -1,0 +1,65 @@
+﻿/*::::::::::::HEADER::::::::::::::::*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    z-index: 10;
+    background: #001F3D;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    height: 10vh;
+    position: relative;
+    top: 0vh;
+    transition: 1.5s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+
+.headerback row {
+    top: 0;
+    display: grid;
+    grid-template-rows: 200px;
+    background-color: #001F3D;
+}
+
+.separacion {
+
+    grid-auto-rows: 100px;
+}
+
+.panel1 {
+    margin-top: 100px;
+}

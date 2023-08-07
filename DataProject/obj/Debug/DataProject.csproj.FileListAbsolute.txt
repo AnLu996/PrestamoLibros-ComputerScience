@@ -1,0 +1,8 @@
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\DataProject.exe.config
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\DataProject.exe
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\DataProject.pdb
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.csproj.AssemblyReference.cache
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.csproj.SuggestedBindingRedirects.cache
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.csproj.CoreCompileInputs.cache
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.exe
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.pdb
