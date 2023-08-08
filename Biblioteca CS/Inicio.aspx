@@ -23,67 +23,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Inicio</title>
+    <title>Prestamo de Libros - Read.CS</title>
 
-<style>
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+<!--RECURSOS-->
+<script src="Recursos/UserJS.js"></script>
+<link rel="stylesheet" href="Recursos/UserCSS.css"/>
 
-body {
-    background-color: white;
-    color: black;
-}
-
-.active {
-    background-color: #202020;
-    color: white;
-}
-
-#icon {
-    height: 32px;
-    width: 32px;
-    cursor:pointer;
-}
-
-.contenedor {
-    position: relative;
-    margin-top: 10vh;
-    margin-left: 20vh;
-    margin-right: 20vh;    
-} 
-
-.btn-change-theme {
-    font-size: 32px;
-    line-height: 32px;
-    display: block;
-    text-align: right;
-    color: white;
-    transition: .3s ease all;
-}
-
-/*.btn-change-theme:hover {
-    color:
-}*/
-
-</style>
-
-<script type="text/javascript">
-
-    var icon = document.getElementById("icon");
-
-    icon.onclick = function () {
-        document.body.classList.toggle("active");
-        if (document.body.classList.contains("active")) {
-            icon.src = "Recursos/Images/sun.png";
-        } else {
-            icon.src = "Recursos/Images/moon.png";
-        }
-    }
-
-</script>
 </head>
 <body>
     
@@ -96,9 +41,9 @@ body {
             </a>
 
             <ul class="nav col-12 col-lg-4 me-lg-auto mb-2 justify-content-center mb-md-0"style="font-size:23px">
-              <li><a href="#Inicio.aspx" class="nav-link px-2 link-light"><strong>Inicio</strong></a></li>
-              <li><a href="#Prestamo.aspx" class="nav-link px-2 link-light"><strong>Préstamo</strong></a></li>
-              <li><a href="#Biblioteca.aspx" class="nav-link px-2 link-light"><strong>Bilioteca</strong></a></li>
+              <li><a href="Inicio.aspx" class="nav-link px-2 link-light"><strong>Inicio</strong></a></li>
+              <li><a href="Prestamo.aspx" class="nav-link px-2 link-light"><strong>Préstamo</strong></a></li>
+              <li><a href="Biblioteca.aspx" class="nav-link px-2 link-light"><strong>Bilioteca</strong></a></li>
               
             </ul>
 

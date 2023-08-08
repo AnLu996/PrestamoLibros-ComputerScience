@@ -78,7 +78,7 @@
                     
                             <label id="labelcui" class="col-sm-2 col-form-label formato centrarf">CUI:</label>
                             <div class="col-4 centrar">
-                                <asp:TextBox runat="server" ID="cui" class="form-control" type="number"  /><br/>
+                                <asp:TextBox runat="server" ID="cui" class="form-control" type="text"  /><br/>
                             </div>
                          </div>
 
@@ -119,7 +119,7 @@
                     </div>
                     <div class="modal-footer" style="justify-content: center">
                         <asp:Button ID="Button1" class="btn btn-dark" runat="server" Text="Limpiar" type="button" OnClientClick="return limpiar_contenido();"/>
-                        <asp:Button ID="Button2" runat="server" Text="Enviar" OnClientClick="var a = validar_contenido(); return a;" class="btn btn-success" OnClick="ButtonEnviar_Click" type="button" data-dismiss="modal" />
+                        <asp:Button ID="Button2" runat="server" Text="Enviar" class="btn btn-success" type="button" OnClick="Button_Enviar_Click"/>
                     </div>
                 </div>
             </div>

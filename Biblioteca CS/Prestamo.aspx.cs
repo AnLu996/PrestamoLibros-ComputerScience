@@ -11,7 +11,12 @@ namespace Biblioteca_CS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                // Deshabilitar el TextBox al cargar la página por primera vez
+                FechaEntrega.Enabled = false;
+                FechaPrestamo.Enabled = false;
+            }
         }
     }
 }

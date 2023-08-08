@@ -32,60 +32,46 @@ namespace Biblioteca_CS
 
             return carreras;
         }
-        protected void ButtonEnviar_Click(object sender, EventArgs e)
+        protected void Button_Enviar_Click(object sender, EventArgs e)
         {
-            string aname = nombre.Text;
-            string alastname = apellido.Text;
-            string amail = email.Text;
-            int acui = int.Parse(cui.Text);
-            int acarrera = carrera.SelectedIndex;
-            bool aestud = estudiante.Checked;
-            bool adocen = docente.Checked;
-            bool aegre = egresado.Checked;
-            string apass1 = password.Text;
-            string apass2 = password2.Text;
-
-            string rol = " ";
-            if (aestud)
+            string Name = nombre.Text;
+            string Lastname = apellido.Text;
+            string Email = email.Text;
+            int Cui = int.Parse(cui.Text);
+            int Carrera = carrera.SelectedIndex;
+            string Rol = estudiante.Checked ? "Estudiante" : (docente.Checked ? "Docente" : "Egresado");
+            string pass1 = password.Text;
+            string pass2 = password2.Text;
+            string truepassword = "";
+            if (!string.IsNullOrEmpty(pass1) && !string.IsNullOrEmpty(pass2) && pass2 == pass1)
             {
-                rol = "Estudiante";
-            }
-            else if (adocen)
-            {
-                rol = "Docente";
-            }
-            else
-            {
-                rol = "Egresado";
-            }
-
-            string truepassword = " ";
-            if (apass2 == apass1) {
-                truepassword = apass2; 
+                truepassword = pass2;
             }
 
             ServiceProject1Client client = new ServiceProject1Client();
-            client.RegistroUsuario(aname, alastname, acui, amail, acarrera, rol, truepassword);
-            CreateSession(aname, alastname, acui);
-            CreateCookie(amail, rol); //CORREGIR
+            client.RegistroUsuario(Name, Lastname, Cui, Email, Carrera, Rol, truepassword);
+            Console.Write("Datos Enviados Correctamente");
+            CreateSession(Name, Lastname, Cui);
+            CreateCookie(Email, Rol);
             Limpiar();
         }
+
         protected void ButtonLogin_Click(object sender, EventArgs e)
         {
             Response.Redirect("LoginPage.aspx");
         }
         protected void Limpiar()
         {
-            nombre.Text = string.Empty;
-            apellido.Text = string.Empty;
-            email.Text = string.Empty;
-            cui.Text = string.Empty; //DUDAS
+            nombre.Text = "";
+            apellido.Text = "";
+            email.Text = "";
+            cui.Text = ""; 
             estudiante.Checked = false;
             docente.Checked = false;
             egresado.Checked = false;
             carrera.SelectedIndex = 0;
-            password.Text = string.Empty;
-            password2.Text = string.Empty;
+            password.Text = "";
+            password2.Text = "";
         }
         protected void Page_Load(object sender, EventArgs e)
         {
