@@ -60,3 +60,13 @@ G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\obj\Debug\ServiceProjec
 G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\obj\Debug\ServiceProject.csproj.CopyComplete
 G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\obj\Debug\ServiceProject.dll
 G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\obj\Debug\ServiceProject.pdb
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\BCrypt.Net-Next.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\System.Buffers.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\System.Memory.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\System.Numerics.Vectors.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\System.Runtime.CompilerServices.Unsafe.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\BCrypt.Net-Next.xml
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\System.Buffers.xml
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\System.Memory.xml
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\System.Numerics.Vectors.xml
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\ServiceProject\bin\System.Runtime.CompilerServices.Unsafe.xml

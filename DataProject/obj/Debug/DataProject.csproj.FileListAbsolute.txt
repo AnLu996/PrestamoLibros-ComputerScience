@@ -6,3 +6,14 @@ G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.cspr
 G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.csproj.CoreCompileInputs.cache
 G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.exe
 G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.pdb
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\BCrypt.Net-Next.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\System.Buffers.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\System.Memory.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\System.Numerics.Vectors.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\BCrypt.Net-Next.xml
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\System.Buffers.xml
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\System.Memory.xml
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\System.Numerics.Vectors.xml
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+G:\UNSA\2023-A\DBP\Proyecto\Biblioteca CS\DataProject\obj\Debug\DataProject.csproj.CopyComplete

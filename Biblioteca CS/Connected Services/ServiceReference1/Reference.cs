@@ -21,17 +21,29 @@ namespace Biblioteca_CS.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/getCarreras", ReplyAction="http://tempuri.org/IServiceProject1/getCarrerasResponse")]
         System.Threading.Tasks.Task<string[]> getCarrerasAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/InformacionUsuario", ReplyAction="http://tempuri.org/IServiceProject1/InformacionUsuarioResponse")]
-        void InformacionUsuario(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/RegistroUsuario", ReplyAction="http://tempuri.org/IServiceProject1/RegistroUsuarioResponse")]
+        void RegistroUsuario(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/InformacionUsuario", ReplyAction="http://tempuri.org/IServiceProject1/InformacionUsuarioResponse")]
-        System.Threading.Tasks.Task InformacionUsuarioAsync(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/RegistroUsuario", ReplyAction="http://tempuri.org/IServiceProject1/RegistroUsuarioResponse")]
+        System.Threading.Tasks.Task RegistroUsuarioAsync(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/Existe_Registro", ReplyAction="http://tempuri.org/IServiceProject1/Existe_RegistroResponse")]
         bool Existe_Registro(string nombres, string apellidos, string correo, int cui);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/Existe_Registro", ReplyAction="http://tempuri.org/IServiceProject1/Existe_RegistroResponse")]
         System.Threading.Tasks.Task<bool> Existe_RegistroAsync(string nombres, string apellidos, string correo, int cui);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/IniciarSesion", ReplyAction="http://tempuri.org/IServiceProject1/IniciarSesionResponse")]
+        bool IniciarSesion(string correo, int cui, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/IniciarSesion", ReplyAction="http://tempuri.org/IServiceProject1/IniciarSesionResponse")]
+        System.Threading.Tasks.Task<bool> IniciarSesionAsync(string correo, int cui, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/Existe_Usuario", ReplyAction="http://tempuri.org/IServiceProject1/Existe_UsuarioResponse")]
+        bool Existe_Usuario(string correo, int cui);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceProject1/Existe_Usuario", ReplyAction="http://tempuri.org/IServiceProject1/Existe_UsuarioResponse")]
+        System.Threading.Tasks.Task<bool> Existe_UsuarioAsync(string correo, int cui);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,12 +81,12 @@ namespace Biblioteca_CS.ServiceReference1 {
             return base.Channel.getCarrerasAsync();
         }
         
-        public void InformacionUsuario(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña) {
-            base.Channel.InformacionUsuario(nombres, apellidos, cui, correo, carrera, rol, contraseña);
+        public void RegistroUsuario(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña) {
+            base.Channel.RegistroUsuario(nombres, apellidos, cui, correo, carrera, rol, contraseña);
         }
         
-        public System.Threading.Tasks.Task InformacionUsuarioAsync(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña) {
-            return base.Channel.InformacionUsuarioAsync(nombres, apellidos, cui, correo, carrera, rol, contraseña);
+        public System.Threading.Tasks.Task RegistroUsuarioAsync(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña) {
+            return base.Channel.RegistroUsuarioAsync(nombres, apellidos, cui, correo, carrera, rol, contraseña);
         }
         
         public bool Existe_Registro(string nombres, string apellidos, string correo, int cui) {
@@ -83,6 +95,22 @@ namespace Biblioteca_CS.ServiceReference1 {
         
         public System.Threading.Tasks.Task<bool> Existe_RegistroAsync(string nombres, string apellidos, string correo, int cui) {
             return base.Channel.Existe_RegistroAsync(nombres, apellidos, correo, cui);
+        }
+        
+        public bool IniciarSesion(string correo, int cui, string password) {
+            return base.Channel.IniciarSesion(correo, cui, password);
+        }
+        
+        public System.Threading.Tasks.Task<bool> IniciarSesionAsync(string correo, int cui, string password) {
+            return base.Channel.IniciarSesionAsync(correo, cui, password);
+        }
+        
+        public bool Existe_Usuario(string correo, int cui) {
+            return base.Channel.Existe_Usuario(correo, cui);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Existe_UsuarioAsync(string correo, int cui) {
+            return base.Channel.Existe_UsuarioAsync(correo, cui);
         }
     }
 }

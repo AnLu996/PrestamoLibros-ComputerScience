@@ -37,13 +37,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Carrera.cs" />
-    <Compile Include="Categoria.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="Lenguaje.cs" />
     <Compile Include="Libros.cs" />
     <Compile Include="Prestamos.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Usuarios.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioteca_CS.ServiceReference1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,9 +15,30 @@ namespace Biblioteca_CS
 
         }
 
+
+        private void createSesion(String Usuario, int Id)
+        {
+            Session["Usuario"] = Usuario;
+            Session["Id"] = Id;
+        }
         protected void ButtonEnter_Click(object sender, EventArgs e)
         {
-            Response.Redirect("UserPage.aspx");
+            string amail = email.Text;
+            int acui = int.Parse(cui.Text);
+            string password = contrasena.Text;
+            ServiceProject1Client usuario = new ServiceProject1Client();
+            bool UserCorrect = usuario.IniciarSesion(amail, acui, password);
+            if (UserCorrect)
+            {
+                Session["Email"] = amail;
+                Session["CUI"] = acui;
+                Response.Redirect("inicioDoc.aspx");
+            }
+            else
+            {
+                string mensaje = "Error al ingresar datos";
+                ScriptManager.RegisterStartupScript(this, GetType(), "alert", $"alert('{mensaje}');", true);
+            }
         }
     }
 }

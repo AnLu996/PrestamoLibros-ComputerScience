@@ -15,11 +15,17 @@ namespace ServiceProject
         IList<String> getCarreras();
 
         [OperationContract]
-        void InformacionUsuario(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña);
+        void RegistroUsuario(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña);
 
         [OperationContract]
         bool Existe_Registro(string nombres, string apellidos, string correo, int cui);
-
         
+        [OperationContract]
+        bool IniciarSesion(string correo, int cui, string password);
+
+        [OperationContract]
+        bool Existe_Usuario(string correo, int cui);
+
+
     }
 }

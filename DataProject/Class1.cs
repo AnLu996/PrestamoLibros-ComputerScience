@@ -19,7 +19,7 @@ namespace DataProject
 
         private void query()
         {
-            Carrera carrera = new Carrera();
+            Usuarios carrera = new Usuarios();
             IList<string> carreras = carrera.getCarrera();
 
             if (carreras == null)
@@ -32,10 +32,10 @@ namespace DataProject
                 Console.WriteLine(carreras[i]);
             }
             Usuarios dataAlumnos = new Usuarios();
-            dataAlumnos.Ingregar_Usuario("Andrea", "Cuela Morales", 2022150, "acuelam@unsa.edu.pe", 3, "Estudiante", "uwu");
+            dataAlumnos.Ingregar_Usuario("Andrea", "Cuela Morales", 2022150, "acuelam@unsa.edu.pe", 1, "Estudiante", "uwu");
             Console.WriteLine(dataAlumnos.ExisteRegistro("Giomar", "Muñoz Curi", "gmunoz@unsa.edu.pe", 20222150));
 
-            Categoria categoria = new Categoria();
+            Libros categoria = new Libros();
             IList<string> categorias = categoria.getCategoria();
 
             if (categorias == null)
@@ -48,18 +48,7 @@ namespace DataProject
                 Console.WriteLine(categorias[i]);
             }
 
-            Lenguaje lenguaje = new Lenguaje();
-            IList<string> lenguajes = lenguaje.getLenguaje();
-
-            if (lenguajes == null)
-            {
-                Console.WriteLine("No data");
-                return;
-            }
-            for (int i = 0; i < lenguajes.Count; i++)
-            {
-                Console.WriteLine(lenguajes[i]);
-            }
+            Libros lenguaje = new Libros();
         }
-    }    
+    }
 }

@@ -57,11 +57,9 @@ namespace DataProject
                         return false;
                     }
                 }
-                return true; 
+                return true;
             }
         }
-
-
 
         public void Ingregar_Usuario(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña)
         {
@@ -72,15 +70,14 @@ namespace DataProject
 
                 using (SqlCommand command = new SqlCommand(insertQuery, connection))
                 {
+                    string encryptedPassword = EncriptarContraseña(contraseña);
+
                     command.Parameters.AddWithValue("@Nombres", nombres);
                     command.Parameters.AddWithValue("@Apellidos", apellidos);
                     command.Parameters.AddWithValue("@CUI", cui);
                     command.Parameters.AddWithValue("@Correo", correo);
                     command.Parameters.AddWithValue("@Carrera", carrera);
                     command.Parameters.AddWithValue("@Rol", rol);
-
-                    string encryptedPassword = EncriptarContraseña(contraseña);
-
                     command.Parameters.AddWithValue("@Contrasena", encryptedPassword);
 
                     command.ExecuteNonQuery();
@@ -186,6 +183,30 @@ namespace DataProject
                     }
                 }
             }
+        }
+
+        public IList<string> getCarrera()
+        {
+            List<string> carreras = new List<string>();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT Carrera FROM Carreras";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        string carrera = reader.GetString(0);
+                        carreras.Add(carrera);
+                    }
+
+                    reader.Close();
+                }
+            }
+            return carreras;
         }
 
         /*public void Cambiar_Contraseña(int id, string contra)

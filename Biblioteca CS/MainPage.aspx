@@ -138,7 +138,7 @@
                 <h3>Computer Science</h3>            
             
                 <div class="btn">
-                    <button id="Singin" class="btn-direccionar" type="button" data-toggle="modal" data-target="#Registrom">Registrarse</button>
+                    <button id="Singin" class="btn-registro" type="button" data-toggle="modal" data-target="#Registrom">Registrarse</button>
                     <asp:Button ID="Login" class="btn-direccionar" runat="server" OnClick="ButtonLogin_Click" text="Iniciar Sesión" />
 
                 </div>

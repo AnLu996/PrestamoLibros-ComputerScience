@@ -13,7 +13,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="InformacionUsuario">
+  <xs:element name="RegistroUsuario">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="nombres" nillable="true" type="xs:string" />
@@ -26,7 +26,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="InformacionUsuarioResponse">
+  <xs:element name="RegistroUsuarioResponse">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>
@@ -45,6 +45,37 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="Existe_RegistroResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IniciarSesion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="correo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cui" type="xs:int" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IniciarSesionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IniciarSesionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Existe_Usuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="correo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cui" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Existe_UsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Existe_UsuarioResult" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

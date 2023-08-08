@@ -137,8 +137,8 @@ header ul li a {
 }
 
 .btn-registro {
-    width: 170px;
-    height: 50px;
+    width: 25vh;
+    height: 8vh;
     line-height: 40px;
     color: #fff;
     background: #07549D;
@@ -146,7 +146,7 @@ header ul li a {
     border: none;
     outline: none;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px;
+    font-size: 3.5vh;
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
@@ -158,8 +158,8 @@ header ul li a {
 }
 
 .btn-direccionar {
-    width: 170px;
-    height: 50px;
+    width: 28vh;
+    height: 8vh;
     line-height: 40px;
     color: #fff;
     background: #001F3D;
@@ -436,7 +436,7 @@ header ul li a {
 
 .formato {
     font-family: 'Nunito', sans-serif;
-    font-size: 3vh;
+    font-size: 2vh;
     color: black;
 }
 

@@ -65,7 +65,7 @@ namespace Biblioteca_CS
             }
 
             ServiceProject1Client client = new ServiceProject1Client();
-            client.InformacionUsuario(aname, alastname, acui, amail, acarrera, rol, truepassword);
+            client.RegistroUsuario(aname, alastname, acui, amail, acarrera, rol, truepassword);
             CreateSession(aname, alastname, acui);
             CreateCookie(amail, rol); //CORREGIR
             Limpiar();

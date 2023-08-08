@@ -3,14 +3,11 @@
     if (num.length == 0 || num.length > 8) {
         return false;
     }
-
     return true;
 
 }
 
 function enviar_contenido() {
-
-
     var num = document.getElementById("cui").value;
     if (!validar_cui(num)) {
         alert("CUI incorrecto !!");
@@ -21,5 +18,4 @@ function enviar_contenido() {
     var confirmacion = "Inicio de sesion exitoso.";
     alert(confirmacion);
     return false;
-
 }

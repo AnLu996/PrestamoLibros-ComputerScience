@@ -14,21 +14,33 @@ namespace ServiceProject
     {
         public IList<String> getCarreras()
         {
-            Carrera carreras = new Carrera();
+            Usuarios carreras = new Usuarios();
             IList<String> carrera = carreras.getCarrera();
             return carrera;
         }
 
-        public void InformacionUsuario(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña)
+        public void RegistroUsuario(string nombres, string apellidos, int cui, string correo, int carrera, string rol, string contraseña) //REGISTRO
         {
             Usuarios dataAlumnos = new Usuarios();
             dataAlumnos.Ingregar_Usuario(nombres, apellidos, cui, correo, carrera, rol, contraseña);
         }
 
         public bool Existe_Registro(string nombres, string apellidos, string correo, int cui)
-        { 
+        {
             Usuarios dataAlumnos = new Usuarios();
             return dataAlumnos.ExisteRegistro(nombres, apellidos, correo, cui);
+        }
+        public bool IniciarSesion(string email, int cui, string password)
+        {
+            Usuarios user = new Usuarios();
+            bool usuarioaceptado = user.Iniciar_Usuario(email, cui, password);
+            return usuarioaceptado;
+        }
+
+        public bool Existe_Usuario(string correo, int cui)
+        {
+            Usuarios dataAlumnos = new Usuarios();
+            return dataAlumnos.ExisteUsuario(correo, cui);
         }
     }
 }

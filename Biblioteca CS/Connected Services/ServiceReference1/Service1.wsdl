@@ -13,11 +13,11 @@
   <wsdl:message name="IServiceProject1_getCarreras_OutputMessage">
     <wsdl:part name="parameters" element="tns:getCarrerasResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceProject1_InformacionUsuario_InputMessage">
-    <wsdl:part name="parameters" element="tns:InformacionUsuario" />
+  <wsdl:message name="IServiceProject1_RegistroUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistroUsuario" />
   </wsdl:message>
-  <wsdl:message name="IServiceProject1_InformacionUsuario_OutputMessage">
-    <wsdl:part name="parameters" element="tns:InformacionUsuarioResponse" />
+  <wsdl:message name="IServiceProject1_RegistroUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistroUsuarioResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceProject1_Existe_Registro_InputMessage">
     <wsdl:part name="parameters" element="tns:Existe_Registro" />
@@ -25,18 +25,38 @@
   <wsdl:message name="IServiceProject1_Existe_Registro_OutputMessage">
     <wsdl:part name="parameters" element="tns:Existe_RegistroResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceProject1_IniciarSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:IniciarSesion" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject1_IniciarSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IniciarSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject1_Existe_Usuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:Existe_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject1_Existe_Usuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Existe_UsuarioResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServiceProject1">
     <wsdl:operation name="getCarreras">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject1/getCarreras" message="tns:IServiceProject1_getCarreras_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject1/getCarrerasResponse" message="tns:IServiceProject1_getCarreras_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="InformacionUsuario">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject1/InformacionUsuario" message="tns:IServiceProject1_InformacionUsuario_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject1/InformacionUsuarioResponse" message="tns:IServiceProject1_InformacionUsuario_OutputMessage" />
+    <wsdl:operation name="RegistroUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject1/RegistroUsuario" message="tns:IServiceProject1_RegistroUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject1/RegistroUsuarioResponse" message="tns:IServiceProject1_RegistroUsuario_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Existe_Registro">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject1/Existe_Registro" message="tns:IServiceProject1_Existe_Registro_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject1/Existe_RegistroResponse" message="tns:IServiceProject1_Existe_Registro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IniciarSesion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject1/IniciarSesion" message="tns:IServiceProject1_IniciarSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject1/IniciarSesionResponse" message="tns:IServiceProject1_IniciarSesion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Existe_Usuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject1/Existe_Usuario" message="tns:IServiceProject1_Existe_Usuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject1/Existe_UsuarioResponse" message="tns:IServiceProject1_Existe_Usuario_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServiceProject1" type="tns:IServiceProject1">
@@ -50,8 +70,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="InformacionUsuario">
-      <soap:operation soapAction="http://tempuri.org/IServiceProject1/InformacionUsuario" style="document" />
+    <wsdl:operation name="RegistroUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject1/RegistroUsuario" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -61,6 +81,24 @@
     </wsdl:operation>
     <wsdl:operation name="Existe_Registro">
       <soap:operation soapAction="http://tempuri.org/IServiceProject1/Existe_Registro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IniciarSesion">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject1/IniciarSesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Existe_Usuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject1/Existe_Usuario" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

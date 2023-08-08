@@ -37,9 +37,9 @@
     <form id="form1" runat="server" class="text-center col-11">
       <label id="labelcui">CUI:<asp:TextBox ID="cui" runat="server" class="form-control" type="text"> </asp:TextBox></label>
       <label id="labelcorreo">Correo:<asp:TextBox ID="email" runat="server" class="form-control" type="text"> </asp:TextBox></label>
-      <label id="labelcontraseña">Contraseña:<asp:TextBox ID="contraseña" runat="server" type="password" class="form-control" ></asp:TextBox></label>
+      <label id="labelcontraseña">Contraseña:<asp:TextBox ID="contrasena" runat="server" type="password" class="form-control" ></asp:TextBox></label>
       <asp:Button ID="Button1" runat="server" class="btn-lg btn-success" style="margin-top: 2vh; font-family: 'Kanit', sans-serif" text="Iniciar Sesión" OnClientClick="return enviar_contenido();" OnClick="ButtonEnter_Click" />
-      <div class="nuevousuario">¿Nuevo por aquí? <a href="#"><strong>Crea una cuenta</strong></a></div>
+      <div class="nuevousuario">¿Nuevo por aquí? <a href="MainPage.aspx"><strong>Crea una cuenta</strong></a></div>
 
     </form>
   </div>
