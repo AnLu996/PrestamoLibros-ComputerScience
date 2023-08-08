@@ -33,13 +33,13 @@ namespace Biblioteca_CS
         protected global::System.Web.UI.WebControls.TextBox titulo;
 
         /// <summary>
-        /// Control TextBox1.
+        /// Control autor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox autor;
 
         /// <summary>
         /// Control FechaPrestamo.
@@ -58,5 +58,23 @@ namespace Biblioteca_CS
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FechaEntrega;
+
+        /// <summary>
+        /// Control btnimpiar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnimpiar;
+
+        /// <summary>
+        /// Control btnprestamo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnprestamo;
     }
 }

@@ -86,7 +86,7 @@ namespace DataProject
             }
         }
 
-        public bool ExisteRegistro(string nombres, string apellidos, string correo, int cui)
+        public bool Existe_Registro(string nombres, string apellidos, string correo, int cui)
         {
             int count = 0;
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -162,7 +162,7 @@ namespace DataProject
             {
                 connection.Open();
 
-                string query = "SELECT contrasena FROM Usuarios WHERE CUI = @CUI AND Correo = @Correo";
+                string query = "SELECT contrasena FROM Usuarios WHERE cui = @CUI AND email = @Correo";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
@@ -179,6 +179,7 @@ namespace DataProject
                     }
                     else
                     {
+                        Console.WriteLine("Error en la consulta:");
                         return false;
                     }
                 }

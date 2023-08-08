@@ -33,7 +33,7 @@ namespace DataProject
             }
             Usuarios dataAlumnos = new Usuarios();
             dataAlumnos.Ingregar_Usuario("Andrea", "Cuela Morales", 2022150, "acuelam@unsa.edu.pe", 1, "Estudiante", "uwu");
-            Console.WriteLine(dataAlumnos.ExisteRegistro("Giomar", "Muñoz Curi", "gmunoz@unsa.edu.pe", 20222150));
+            Console.WriteLine(dataAlumnos.Existe_Registro("Giomar", "Muñoz Curi", "gmunoz@unsa.edu.pe", 20222150));
 
             Libros categoria = new Libros();
             IList<string> categorias = categoria.getCategoria();

@@ -71,29 +71,32 @@
             
             <div class="form-content">        
                 <div class="row">
-                    <label id="labeltitulo" class="col-sm-2 col-form-label formato centrarf">Titulo:</label>
+                    <label id="labeltitulo" class="col-sm-2 col-form-label">Titulo:</label>
                     <div class="col-10">
                         <asp:TextBox runat="server" ID="titulo" class="form-control" type="text"  /><br/>
                     </div>
                 </div>
                 <div class="row">
-                    <label id="labelautor" class="col-sm-2 col-form-label formato centrarf">Autor:</label>
+                    <label id="labelautor" class="col-sm-2 col-form-label">Autor:</label>
                     <div class="col-10">
-                        <asp:TextBox runat="server" ID="TextBox1" class="form-control" type="text"  /><br/>
+                        <asp:TextBox runat="server" ID="autor" class="form-control" type="text"  /><br/>
                     </div>
                 </div>
                 <div class="row">
-                    <label id="labelfechaprestamo" class="col-sm-2 col-form-label formato centrarf">Fecha de préstamo:</label>
+                    <label id="labelfechaprestamo" class="col-sm-2 col-form-label">Fecha de préstamo:</label>
                     <div class="col-4">
                         <asp:TextBox runat="server" ID="FechaPrestamo" class="form-control" type="datetime-local" disabled="false"/><br/>
                     </div>
                 
-                    <label id="labelfechaentrega" class="col-sm-2 col-form-label formato centrarf">Fecha de entrega *:</label>
+                    <label id="labelfechaentrega" class="col-sm-2 col-form-label">Fecha de entrega *:</label>
                     <div class="col-4">
                         <asp:TextBox runat="server" ID="FechaEntrega" class="form-control" type="date" disabled="false" /><br/>
                     </div>
                 </div>
-                <h6> *El plazo máximo de préstamo es por 3 días.</h6>
+                <h6> *El plazo máximo de préstamo es por 3 días.</h6> <hr />
+
+                <asp:Button ID="btnimpiar" class="btn btn-dark" runat="server" Text="Limpiar Registro" type="button" OnClientClick="return limpiar_contenido();"/>
+                <asp:Button ID="btnprestamo" runat="server" Text="Registrar Préstamo" class="btn btn-success" type="button" OnClick="Button_Registrar_Prestamo"/>
             </div>
         </div>
     </form>

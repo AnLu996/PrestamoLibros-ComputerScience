@@ -28,7 +28,7 @@ namespace ServiceProject
         public bool Existe_Registro(string nombres, string apellidos, string correo, int cui)
         {
             Usuarios dataAlumnos = new Usuarios();
-            return dataAlumnos.ExisteRegistro(nombres, apellidos, correo, cui);
+            return dataAlumnos.Existe_Registro(nombres, apellidos, correo, cui);
         }
         public bool IniciarSesion(string email, int cui, string password)
         {

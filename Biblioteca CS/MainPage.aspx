@@ -9,6 +9,7 @@
 
 <!--JQuery-->
 <script type="text/javascript" src="/Scripts/jquery-3.4.1.min.js"></script>
+<script src = "https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="/Content/bootstrap.min.css" />
 <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
@@ -78,7 +79,7 @@
                     
                             <label id="labelcui" class="col-sm-2 col-form-label formato centrarf">CUI:</label>
                             <div class="col-4 centrar">
-                                <asp:TextBox runat="server" ID="cui" class="form-control" type="text"  /><br/>
+                                <asp:TextBox runat="server" ID="cui" class="form-control" type="text" onblur="ValidarCampos();"/><br/>
                             </div>
                          </div>
 
@@ -108,18 +109,23 @@
                         <div class="row">
                             <label id="labelpassword" class="col-sm-2 col-form-label formato centrarf">Contraseña:</label>
                             <div class="col-4">
-                                <asp:TextBox runat="server" ID="password" class="form-control" type="text"  /><br/>
+                                <asp:TextBox runat="server" ID="password" class="form-control" type="password"/>
                             </div>
                     
                             <label id="labelpassword2" class="col-sm-2 col-form-label formato centrarf">Confirma la contraseña:</label>
                             <div class="col-4">
-                                <asp:TextBox runat="server" ID="password2" class="form-control" type="text"  /><br/>
+                                <asp:TextBox runat="server" ID="password2" class="form-control" type="password"  /><br/>
                             </div>
                          </div>
                     </div>
                     <div class="modal-footer" style="justify-content: center">
-                        <asp:Button ID="Button1" class="btn btn-dark" runat="server" Text="Limpiar" type="button" OnClientClick="return limpiar_contenido();"/>
-                        <asp:Button ID="Button2" runat="server" Text="Enviar" class="btn btn-success" type="button" OnClick="Button_Enviar_Click"/>
+                        <div>
+                            <asp:Button ID="Button1" class="btn btn-dark" runat="server" Text="Limpiar" type="button" OnClientClick="return limpiar_contenido();"/>
+                        </div>
+                        
+                        <div>
+                            <asp:Button ID="Button2" runat="server" Text="Enviar" class="btn btn-success" type="button" OnClick="Button_Enviar_Click"/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,7 +145,8 @@
             
                 <div class="btn">
                     <button id="Singin" class="btn-registro" type="button" data-toggle="modal" data-target="#Registrom">Registrarse</button>
-                    <asp:Button ID="Login" class="btn-direccionar" runat="server" OnClick="ButtonLogin_Click" text="Iniciar Sesión" />
+                    <button id="Login" class="btn-direccionar" type="button" onclick="redireccionar()">Iniciar Sesión</button>
+
 
                 </div>
             </div>

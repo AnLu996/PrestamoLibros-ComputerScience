@@ -113,15 +113,7 @@
                 
             </div>
         </div>
-        <div>
-            <h2> Libros más solicitados</h2>  <!-- HISTORIAL -->
-            <div class="sin-data">
-                <h6>SIN REGISTRO</h6> <hr />
-            </div>
-            <div class="con_data">
-                ESTADÍSTICA
-            </div>
-        </div>
+        
 
     </div>
     <form id="form1" runat="server">

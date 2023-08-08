@@ -16,11 +16,7 @@ namespace Biblioteca_CS
         }
 
 
-        private void createSesion(String Usuario, int Id)
-        {
-            Session["Usuario"] = Usuario;
-            Session["Id"] = Id;
-        }
+        
         protected void ButtonEnter_Click(object sender, EventArgs e)
         {
             string amail = email.Text;
@@ -32,7 +28,7 @@ namespace Biblioteca_CS
             {
                 Session["Email"] = amail;
                 Session["CUI"] = acui;
-                Response.Redirect("inicioDoc.aspx");
+                Response.Redirect("Inicio.aspx");
             }
             else
             {

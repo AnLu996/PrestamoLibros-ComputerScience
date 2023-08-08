@@ -10,3 +10,20 @@ icon.onclick = function () {
 }
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::PRESTAMO::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+function limpiar_contenido() {
+    var vacio = "";
+    document.getElementById("titulo").value = vacio;
+    document.getElementById("autor").value = vacio;
+    return false;
+}
+
+function enviar_contenido() {
+    if (!document.getElementById("autor").value || !document.getElementById("titulo").value ) {
+        alert("No se ingresó información");
+        return false;
+    }
+    var confirmacion = "Registro de préstamo exitoso.";
+    alert(confirmacion);
+    return true;
+}
